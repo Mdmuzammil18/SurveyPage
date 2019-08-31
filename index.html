@@ -1,0 +1,47 @@
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <div class="header">
+    <h1 id="title">Pet Survey</h1>
+    <p id="description">A short survey on pets.</p>
+  </div>
+  <main>
+    <form id="survey-form">
+      <label for="name" id="name-label" class="label-title">Name: <sup>*</sup> </label>
+      <input type="text" id="name" placeholder="Your name" required>
+      <label for="email" id="email-label" class="label-title">Email: <sup>*</sup> </label>
+      <input type="email" id="email" placeholder="name@email.com" required>
+      <label for="number" id="number-label" class="label-title">How many pets do you own? <sup>*</sup></label>
+      <input type="number" id="number" placeholder="1" min="0" max="10" required>
+      <label for="dropdown" class="label-title">Where did you get your pet(s) from:
+      </label>
+      
+      <select id="dropdown">
+        <option value="" disabled>Please choose an option:</option>
+        <option value="pet-shop">Pet Shop</option>
+        <option value="pet-rescue">Rescue Shelter</option>
+        <option value="from-friend">From Friends of Family</option>
+        <option value="other">Other (please use textbox below)</option>
+      </select>
+      <p>Do you prefer cats or dogs?</p>
+      <label for="cats">
+      Cats <input id="cats" type="radio" name="catsordogs" value="cats">
+      </label>
+      <label for="dogs">
+      Dogs<input id="dogs" type="radio" name="catsordogs" value="dogs">
+      </label>
+      <p>Which of the following have you done for your pet(s)? <br>
+      (Check all that apply)
+      </p>
+      <label for="training"><input id="training" type="checkbox" value="training"> Training</label>
+      <label for="naming"><input id="naming" type="checkbox" value="naming"> Named</label>
+      <label for="other-pets"><input id="other-pets" type="checkbox" value="other-pets"> Interacted with other pets</label>
+      <label for="desexed"><input id="desexed" type="checkbox" value="desexed"> Injured
+      </label>
+      <label for="textarea" class="label-title">Any additional comments?</label>
+      <textarea name="texarea" id="textarea" cols="30" rows="11" placeholder="They're super cute!"></textarea>
+      <button id="submit">Submit</button>
+    </form>
+  </main>
+</body>
